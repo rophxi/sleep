@@ -1,0 +1,23 @@
+@@ -0,0 +1,10 @@
+# Microsoft.AspNetCore.Components.Forms
+
+``` diff
+ namespace Microsoft.AspNetCore.Components.Forms {
+     public class InputFile : ComponentBase, IDisposable, IInputFileJsCallbacks {
+-        protected override void OnInitialized();
+     }
+ }
+```
+
+ 10 changes: 10 additions & 0 deletions10  
+...t.AspNetCore.App/8.0-preview3_Microsoft.AspNetCore.Components.Infrastructure.md
+@@ -0,0 +1,10 @@
+# Microsoft.AspNetCore.Components.Infrastructure
+
+``` diff
+ namespace Microsoft.AspNetCore.Components.Infrastructure {
+     public class ComponentStatePersistenceManager {
++        public Task PersistStateAsync(IPersistentComponentStateStore store, Dispatcher dispatcher);
+     }
+ }
+```
